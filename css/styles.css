@@ -1,0 +1,16 @@
+/* body section */
+body{
+  background-image: url("../imgs/pizza_aver.0.gif");
+  background-repeat: no-repeat;
+  backface-visibility: visible;
+  background-size: cover;
+}
+/* header section */
+#center{
+  height: ;
+  /* to align the selected ids at the center */
+}
+
+#jumbotron{
+background-color: transparent;
+}
