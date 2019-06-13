@@ -1,0 +1,100 @@
+/* styling the other pages */
+.body{
+  background-color: wheat;
+}
+/* styles for Photos.html  beggins here*/
+.background{
+  background-color: wheat;
+
+}
+
+#jumbotron{
+  background-color: transparent;
+}
+.navbar{
+  background-color: transparent;
+}
+/* styles for Photos.html ends here */
+ /* styles for contact page begin here */
+ .center{
+   text-align: center;
+   padding-left: 3%;
+ }
+ table {
+    width: 100%;
+    word-break: break-word;
+    font-size: initial;
+    font-family: monospace;
+    tab-size: 4;
+    white-space: pre-wrap !important;
+    border-spacing: 0px;
+    margin: 0px;}
+    table {
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    font-variant: normal;
+}
+/* styling the gallery photos page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* end of gallery styling */
