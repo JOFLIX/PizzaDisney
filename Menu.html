@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="imgs/pizzadianey.jpg">
+    <link rel="stylesheet" href="css/pages.css">
+    <script type="text/javascript" src="js/script.js" async></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.js" async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>PizzaDisney-Menu</title>
+  </head>
+  <body class="body">
+    <div class="container-fluid">
+        <header>
+            <div id="jumbotron" class="jumbotron">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                  <a class="navbar-brand" href="#">                <div id="center">
+                                      <img src="imgs/pizzadianey.jpg" alt="project-_logo" height="88" class="fa-spin">
+                                      <!-- <h1>PizzaDisney</h1> -->
+                                  </div></a>
+
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="Photos.html">Photos</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="About.html">About</a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="Menu.html">Menu</a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="Media.html">Media</a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="Words.html">Words</a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="Contact.html">Contact</a>
+                          </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                          <br><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    <img src="imgs/round-add_shopping_cart-black-18/2x/round_add_shopping_cart_black_18dp.png" alt="">
+                  </div>
+              </nav>
+            </div>
+
+        </header>
+    <!-- </div> -->
+    <div>
+      <div class="row cart-row">
+        <div class="col-4">
+        <p> ITEM</p>
+          <hr>
+        </div>
+        <div class="col-4">
+        <p>PRICE</p>
+        <hr>
+        </div>
+        <div class="col-4">
+          <p>QUANTITY</p>
+          <hr>
+        </div>
+
+      </div>
+      <div class="cart-item">
+        <div class="row cart-row">
+          <div class="col-4">
+             <img src="imgs/1-1.jpg" alt="Large-sized-pizza" class="img-fluid img-thumbnail">
+            <br>
+          <ol>
+            <li>Large pizza</li>
+          </ol>
+          </div>
+          <div class="col-4">
+            <br><br>
+            <p class="cart-price">Kshs. 2500</p>
+            <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button>
+          </div>
+          <div class="col-4">
+            <br><br><br><br>
+            <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="">
+          <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+          </div>
+        </div>
+        <div class="row cart-row">
+          <div class="col-4">
+            <img src="imgs/pizza_saver.0.gif" alt="larger" class="img-fluid img-thumbnail"><br>
+            <ol>
+              <li>Small Pizza</li>
+            </ol>
+          </div>
+          <div class="col-4">
+            <br><br>
+            <p class="cart-price">Kshs. 2500</p>
+            <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button>
+          </div>
+          <div class="col-4">
+            <br><br><br><br>
+            <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="">
+          <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+          </div>
+        </div>
+        <div class="row cart-row">
+          <div class="col-4">
+          <img src="imgs/pizza_categoryheader.png" alt="medium-sized-pizza" class="img-fluid img-thumbnail"><br>
+          <ol>
+            <li>Medium-sized pizza</li>
+          </ol>
+          </div>
+          <div class="col-4">
+            <br><br>
+            <p class="cart-price">Kshs. 2500</p>
+            <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button>
+          </div>
+          <div class="col-4">
+            <br><br><br><br>
+            <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="">
+          <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+          </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price" ></span>
+        </div>
+        <button type="button" class="btn btn-primary btn-purchase" name="button">ORDER</button>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
