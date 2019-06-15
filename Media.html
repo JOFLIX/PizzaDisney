@@ -4,16 +4,22 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="imgs/pizzadianey.jpg">
     <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/_icons.scss">
+    <link rel="stylesheet" href="css/_animated.scss">
+    <script type="text/javascript" src="js/bootstrap.js" async></script>
+      <script type="text/javascript" src="js/search.js" async></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <script type="text/javascript" src="js/script.js" async></script>
      <script type="text/javascript" src="js/jquery-3.4.1.js" async></script>
     <title>PizzaDisney-Media</title>
   </head>
-  <body class="body">
+  <body class="body" id="myMenu">
     <div class="container-fluid">
         <header>
-            <div id="jumbotron" class="jumbotron">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <div id="jumbotron" class="jumbotron"> -->
+              <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
 
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,15 +54,26 @@
                           </li>
                       </ul>
                       <form class="form-inline my-2 my-lg-0">
-                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                          <input class="form-control mr-sm-2" id="mySearch" onkeyup="myFuncton()"  type="search" placeholder="Search" aria-label="Search">
                           <br><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                       </form>
                       <img src="imgs/round-add_shopping_cart-black-18/2x/round_add_shopping_cart_black_18dp.png" alt="">
                   </div>
               </nav>
-            </div>
+            <!-- </div> -->
 
         </header>
+        <br><br><br>
+        <div class="card-body">
+          <div id="container">
+          <img src="imgs/media.jpeg" alt="Media Img" style="width:100%;">
+          <div class="content">
+            <h1>PizzaDisney</h1>
+            <p>Where wishes are horses!</p>
+          </div>
+        </div>
+
+        </div>
 
     </div>
 
