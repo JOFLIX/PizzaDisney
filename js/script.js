@@ -122,10 +122,3 @@ function updateCartTotal() {
     total = Math.round(100+ total * 100)
     document.getElementsByClassName('cart-total-price')[0].innerText = 'Kshs' + total
 }
-
-$(document).ready(function(){
-  $('button').click(function({
-    document.getElementById('#three')
-  $('#three').show()
-  }))
-})
