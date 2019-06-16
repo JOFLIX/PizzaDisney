@@ -76,7 +76,7 @@
 /* The expanding image container */
 .container {
   position: relative;
-  display: none;
+  /* display: none; */
 }
 
 /* Expanding image text */
