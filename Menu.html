@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/_animated.scss">
     <script type="text/javascript" src="js/bootstrap.js" async></script>
     <script type="text/javascript" src="js/search.js" async></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>PizzaDisney-Menu</title>
+      <script type="text/javascript" src="js/mdb.js" async></script>
+<title>PizzaDisney-Menu</title>
   </head>
   <body class="body" id="myMenu">
     <div class="container-fluid">
@@ -66,11 +66,15 @@
     <!-- </div> -->
     <br><br><br>
     <div>
+      <!-- section one -->
       <div class="row cart-row">
         <div class="col-4">
         <p> ITEM</p>
           <hr>
-        </div>
+          <a href="totals.html"><button type="button" name="button">CLICK TO CHOOSE YOUR PREFFERED TOPPINGS AND CRUST</button></a>
+      <br><br>
+         </div>
+
         <div class="col-4">
         <p>PRICE</p>
         <hr>
@@ -79,75 +83,170 @@
           <p>QUANTITY</p>
           <hr>
         </div>
-
+</div>
       </div>
-      <div class="cart-item">
-        <div class="row cart-row">
-          <div class="col-4">
-             <img src="imgs/1-1.jpg" alt="Large-sized-pizza" class="img-fluid img-thumbnail">
+      <div class="cart-item shop-item-title">
+        <div class="row cart-row cart-item cart-column">
+          <div class="col-4 ">
+             <img src="imgs/1-1.jpg" alt="Large-sized-pizza" class="img-fluid img-thumbnail shop-item-image">
             <br>
           <ol>
-            <li>Large pizza</li>
+            <li class="cart-item-title">Large pizza</li>
           </ol>
           </div>
           <div class="col-4">
             <br><br>
 
-            <span class="cart-price cart-column">Kshs.2500</span><br><br>
+            <span class="cart-price cart-column">Kshs.2500.00</span><br><br>
             <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button>
           </div>
           <div class="col-4">
             <br><br><br><br>
             <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="">
-          <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+          <!-- <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button> -->
           </div>
         </div>
-        <div class="row cart-row">
+        <div class="row cart-row cart-item cart-column">
           <div class="col-4">
-            <img src="imgs/pizza_saver.0.gif" alt="larger" class="img-fluid img-thumbnail"><br>
+            <img src="imgs/pizza_saver.0.gif" alt="larger" class="img-fluid img-thumbnail shop-item-image"><br>
             <ol>
-              <li>Small Pizza</li>
+              <li class="cart-item-title">Small Pizza</li>
             </ol>
           </div>
           <div class="col-4">
             <br><br>
-            <p class="cart-price cart-column">Kshs.1500</p>
+            <p class="cart-price cart-column">Kshs.1500.00</p>
             <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button>
           </div>
           <div class="col-4">
             <br><br><br><br>
             <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="">
-          <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+          <!-- <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button> -->
           </div>
         </div>
-        <div class="row cart-row">
+        <div class="row cart-row cart-item cart-column">
           <div class="col-4">
-          <img src="imgs/pizza_categoryheader.png" alt="medium-sized-pizza" class="img-fluid img-thumbnail"><br>
+          <img src="imgs/pizza_categoryheader.png" alt="medium-sized-pizza" class="img-fluid img-thumbnail shop-item-image"><br>
           <ol>
-            <li>Medium-sized pizza</li>
+            <li class="cart-item-title">Medium-sized pizza</li>
           </ol>
           </div>
           <div class="col-4">
             <br><br>
-            <p class="cart-price cart-column">Kshs.1000</p>
+            <p class="cart-price cart-column">Kshs.1000.00</p>
 
             <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button>
+           <br>
 
           </div>
           <div class="col-4">
             <br><br><br><br>
             <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="2">
-          <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+          <!-- <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button> -->
           </div>
         </div>
+        <br><br><br>
         <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price" ></span>
         </div>
-        <button type="button" class="btn btn-primary btn-purchase" name="button">ORDER</button>
+        <button type="button" onclick="show()" id="three" class="btn btn-primary btn-purchase" name="button">ORDER</button>
 
-        
       </div>
+    </div>
+
+    <br><br><br>
+    <div>
+      <!-- *************SECTION two************ -->
+<div id="three" style="display:none">
+  <div class="row cart-row">
+    <div class="col-4">
+    <p> ITEM</p>
+      <hr>
+    </div>
+    <div class="col-4">
+    <p>PRICE</p>
+    <hr>
+    </div>
+    <div class="col-4">
+      <p>QUANTITY</p>
+      <hr>
+    </div>
+
+  </div>
+  <div class="cart-item">
+    <div class="row cart-row">
+      <div class="col-4">
+         <img src="imgs/1-1.jpg" alt="Large-sized-pizza" class="img-fluid img-thumbnail">
+        <br>
+      <ol>
+        <li>Large pizza</li>
+      </ol>
+      </div>
+      <div class="col-4">
+        <br><br>
+
+        <span class="cart-price cart-column">Kshs.2500</span><br><br>
+        <!-- <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button> -->
+
+
+      </div>
+      <div class="col-4">
+        <br><br><br><br>
+        <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="">
+      <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+      </div>
+    </div>
+    <div class="row cart-row">
+      <div class="col-4">
+        <img src="imgs/pizza_saver.0.gif" alt="larger" class="img-fluid img-thumbnail"><br>
+        <ol>
+          <li>Small Pizza</li>
+        </ol>
+      </div>
+      <div class="col-4">
+        <br><br>
+        <p class="cart-price cart-column">Kshs.1500</p>
+        <!-- <button type="button" name="button" class="btn btn-primary shop-item-button">ADD TO CART</button> -->
+      </div>
+      <div class="col-4">
+        <br><br><br><br>
+        <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="">
+      <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+      </div>
+    </div>
+    <div class="row cart-row">
+      <div class="col-4">
+      <img src="imgs/pizza_categoryheader.png" alt="medium-sized-pizza" class="img-fluid img-thumbnail"><br>
+      <ol>
+        <li>Medium-sized pizza</li>
+      </ol>
+      </div>
+      <div class="col-4">
+        <br><br>
+        <p class="cart-price cart-column">Kshs.1000</p>
+
+        <!-- <button type="button" name="button" class="btn btn-primary shop-item-button">
+
+        </button> -->
+
+      </div>
+      <div class="col-4">
+        <br><br><br><br>
+        <input type="number" size="4"class="cart-quantity-input" name="cart-quantity-input" value="2">
+      <button class="btn btn-outline-danger my-2 my-sm-0 btn-danger" type="submit">REMOVE</button>
+      </div>
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price" ></span>
+    </div>
+    <button type="button" class="btn btn-primary btn-purchase" name="button">ORDER</button>
+
+
+</div>
+
+</div>
     </div>
   </div>
   </body>
