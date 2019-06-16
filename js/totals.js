@@ -35,7 +35,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Kindly type what you want to add, please!!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
@@ -53,5 +53,9 @@ function newElement() {
       div.style.display = "none";
     }
   }
+}
+
+function goBack(){
+  window.history.back();
 }
 // supposedly end of the totalling page of the shopping cart.
