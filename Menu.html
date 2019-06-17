@@ -162,7 +162,7 @@
     <br><br><br>
     <div>
       <!-- *************SECTION two************ -->
-<div id="three" style="display:none">
+<div id="three">
   <div class="row cart-row">
     <div class="col-4">
     <p> ITEM</p>
@@ -253,5 +253,13 @@
 </div>
     </div>
   </div>
+  <script>
+  $(document).ready(function(){
+ $("button").click(function(){
+   $("#three").hide(1000);
+   $("#three").show(1000);
+ });
+});
+  </script>
   </body>
 </html>
