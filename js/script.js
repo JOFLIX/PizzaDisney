@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$( "a" ).click(function( event ) {
   		event.preventDefault();
 	});
-
+// ui logics
 	var numOfOrders = 0;
 	$(".num").text(numOfOrders);
 
@@ -43,22 +43,22 @@ $(document).ready(function() {
             	width: "400px",
               closeText: "X"});
 	})
-
+// bs logic
 	// increase/decrease the price of order if an item is added/removed
 	function checkboxChange(x) {
 		var priceDialog = 0;
 		$("#recipe"+x).children("li").children("input").each(function () {
 			if($(this).is(":checked")){
-				priceDialog+=3;
+				priceDialog+=50;
 			}
 				$("#totalDialog"+x+">span").text(priceDialog);
 			$(this).change(function () {
 				if ($(this).is(":checked")) {
-					priceDialog += 3;
+					priceDialog += 50;
 					console.log(priceDialog);
 					$("#totalDialog"+x+">span").text(priceDialog);
 				}else{
-					priceDialog -= 3;
+					priceDialog -= 50;
 					$("#totalDialog"+x+">span").text(priceDialog);
 				}
 			})
@@ -90,7 +90,7 @@ $(document).ready(function() {
 				var newCheckbox = '<input type="checkbox" checked>';
 
         for (var i = 0; i < newIngredient.length; i++){
-         $(this).parent().siblings("ul").append("<li>" + newCheckbox + newIngredient[i] + "  (+3$)</li>");
+         $(this).parent().siblings("ul").append("<li>" + newCheckbox + newIngredient[i] + "  (+3Ksks)</li>");
         }
 
 
@@ -103,7 +103,7 @@ $(document).ready(function() {
 
 				$(this).parent().remove();
 			}else{
-				$("#newIngredient").attr("placeholder", "Please add ingrediant");
+				$("#newIngredient").attr("placeholder", "Kindly add ingredient");
 			}
 		});
 		// Remove button hides the input
@@ -188,7 +188,7 @@ $(document).ready(function() {
 		    	$("#thanksMessage").dialog("close");
 		    }, 3100);
 		}else{
-			$("#buyerInfo").append('<p>Kindly <strong>fill up all</all> the inputs.</p>');
+			$("#buyerInfo").append('<p style="color:red">Kindly <strong>fill up all</all> the inputs.</p>');
 		}
 	})
 
