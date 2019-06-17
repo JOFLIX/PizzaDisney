@@ -1,155 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="imgs/pizzadianey.jpg">
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
-   <script type="text/javascript" src="js/script.js" async></script>
-    <link rel="stylesheet" href="css/_icons.scss">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/_icons.scss">
-    <link rel="stylesheet" href="css/_animated.scss">
-    <link rel="stylesheet" href="css/mdb.lite.scss">
-    <script type="text/javascript" src="js/bootstrap.js" async></script>
-      <script type="text/javascript" src="js/search.js" async></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
     <script src="js/fontawesome.js"></script>
-    <script type="text/javascript" src="js/jquery-3.4.1.js" async></script>
-          <script src="js/datatables-select.js" async></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/file.js">
 
-    <title>Document</title>
-
-</head>
-
-<body id="myMenu">
-    <div class="container-fluid">
-        <header>
-            <!-- <div id="jumbotron" class="jumbotron"> -->
-              <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" >
-
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-                  <a class="navbar-brand" href="index.html">                <div id="center">
-                                      <img src="imgs/pizzadianey.jpg" alt="project-_logo" height="88">
-                                      <!-- <h1>PizzaDisney</h1> -->
-                                  </div></a>
-
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                          <li class="nav-item active">
-                              <a class="nav-link" href="store.html">Lets go shopping<span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="Photos.html">Photos</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="About.html">About</a>
-                          </li>
-                          <li>
-                              <a class="nav-link" href="Menu.html">Menu</a>
-                          </li>
-                          <li>
-                              <a class="nav-link" href="Media.html">Media</a>
-                          </li>
-                          <li>
-                              <a class="nav-link" href="Words.html">Words</a>
-                          </li>
-                          <li>
-                              <a class="nav-link" href="Contact.html">Contact</a>
-                          </li>
-                      </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                          <input class="form-control mr-sm-2" id="mySearch" onkeyup="myFuncton()"  type="search" placeholder="Search" aria-label="Search">
-                          <br><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
-                    <a href="Menu.html"><img src="imgs/round-add_shopping_cart-black-18/2x/round_add_shopping_cart_black_18dp.png" alt="Shopping-cart"></a>
-                  </div>
-              </nav>
-            <!-- </div> -->
-
-        </header>
-        <div class="card-body">
-                            <!-- Slideshow container -->
-                  <div class="slideshow-container">
-
-                  <!-- Full-width images with number and caption text -->
-                  <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="imgs/addtext_com_MTEzMjAzNTIzMQ.jpg" style="width:100%">
-                  <div class="text">Caption Text</div>
-                  </div>
-                  <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="imgs/addtext_com_MTMxNjM0NTg4Mg.jpg" style="width:100%">
-                  <div class="text">Caption Text</div>
-                  </div>
-                  <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="imgs/cheesy-pizza-loader.gif" style="width:100%">
-                  <div class="text">Caption Text</div>
-                  </div>
-                  <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="imgs/Contact.jpg" style="width:100%">
-                  <div class="text">Caption Text</div>
-                  </div>
-                  <div class="mySlides fade">
-                  <div class="numbertext">1 / 3</div>
-                  <img src="imgs/media.jpeg" style="width:100%">
-                  <div class="text">Caption Text</div>
-                  </div>
-
-                  <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="imgs/addtext_com_MTEzMjAzNTIzMQ.jpg" style="width:100%">
-                  <div class="text">Caption Two</div>
-                  </div>
-
-                  <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="imgs/addtext_com_MTEzMjAzNTIzMQ.jpg" style="width:100%">
-                  <div class="text">Caption Three</div>
-                  </div>
-
-                  <!-- Next and previous buttons -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>
-
-                  <!-- The dots/circles -->
-                  <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span>
-                  <span class="dot" onclick="currentSlide(2)"></span>
-                  <span class="dot" onclick="currentSlide(3)"></span>
-                  </div>
-        </div>
-        <div class="card-footer">
-
-        </div>
-    </div>
-
-    <script>
-                      var slideIndex = 0;
-                  showSlides();
-
-                  function showSlides() {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}
-                  slides[slideIndex-1].style.display = "block";
-                  setTimeout(showSlides, 2000); // Change image every 2 seconds
-                  }
     </script>
-</body>
+    <link rel="stylesheet" href="css/_animated.scss">
 
+      <script type="text/javascript" src="js/mdb.js" async></script>
+<title>PizzaDisney-Menu</title>
+  </head>
+  <body>
+
+    <!-- Some images will show error in console due not having 'https' in the url,  nothing to worry about -->
+  <input type="checkbox" id="cartToggle" name="toggle">
+
+      <!-- Menu -->
+      <nav class="navbar">
+        <h2 id="logo">PizzaDisney</h2>
+        <div>
+          <label for="cartToggle" class="toggleCart btnStyle btnStyle2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <i class="fa fa-circle" aria-hidden="true"></i>
+          <span class="num"></span>
+  </label>
+        </div>
+      </nav><!-- End of Navigation -->
+
+      <div class="body-content">
+
+      <!-- Cart -->
+      <nav class="cart">
+        <h3>List of orders: <span>0$</span></h3>
+        <ol id="listOfOrders">
+        </ol>
+        <a class="btnStyle btnStyle3 finishOrder">Finish Order</a>
+      </nav>
+
+        <div class="recipe-menu">
+
+          <!-- Recipe 1 -->
+          <div class="recipe">
+            <p class="name">Large</p>
+            <img src="imgs/New-York-Style-Pizza.jpg">
+            <a class="btnStyle3 btnStyle addToCart" id="addToCartLarge">Add to Cart</a>
+            <p class="price"><span>15</span>$</p>
+            <div id="checkOrderLarge" title="Large">
+              <h3 class="listHeading">List of Ingredients:</h3>
+              <ul class="listOfIngredients" id="recipe1">
+                <li><input type="checkbox" checked>Sesame Bun</li>
+                <li><input type="checkbox" checked>Ground Beef Patty</li>
+                <li><input type="checkbox" checked>Onion</li>
+                <li><input type="checkbox" checked>Pickle</li>
+                <li><input type="checkbox" checked>Lettuce Salad</li>
+              </ul>
+              <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
+              <a class="btnStyle listOver">Done</a>
+              <h4 class="totalDialog" id="totalDialog1">Total: <span>15</span>$</h4>
+            </div>
+          </div>
+
+          <!-- Recipe 2 -->
+          <div class="recipe">
+            <p class="name">Medium</p>
+            <img src="imgs/default-pizza-crust-_Fotor.jpg">
+            <a class="btnStyle3 btnStyle addToCart" id="addToCartMedium">Add to Cart</a>
+            <p class="price"><span>15</span>$</p>
+            <div id="checkOrderMedium" title="Medium">
+              <h3 class="listHeading">List of Ingredients:</h3>
+              <ul class="listOfIngredients" id="recipe2">
+                <li><input type="checkbox" checked>Macaroni</li>
+                <li><input type="checkbox" checked>Paprica</li>
+                <li><input type="checkbox" checked>Tomato</li>
+                <li><input type="checkbox" checked>Chease</li>
+                <li><input type="checkbox" checked>Zucchini</li>
+              </ul>
+              <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
+              <a class="btnStyle listOver">Done</a>
+              <h4 class="totalDialog" id="totalDialog2">Total: <span>15</span>$</h4>
+            </div>
+          </div>
+
+          <!-- Recipe 3 -->
+          <div class="recipe">
+            <p class="name">Small</p>
+            <img src="imgs/PIZZ.jpg">
+            <a class="btnStyle3 btnStyle addToCart" id="addToCartPizza">Add to Cart</a>
+            <p class="price"><span>18</span>$</p>
+            <div id="checkOrderPizza" title="Pizza">
+              <h3 class="listHeading">List of Ingredients:</h3>
+              <ul class="listOfIngredients" id="recipe3">
+                <li><input type="checkbox" checked>Tomato Sauce</li>
+                <li><input type="checkbox" checked>Cheese</li>
+                <li><input type="checkbox" checked>Peperoni</li>
+                <li><input type="checkbox" checked>Olives</li>
+                <li><input type="checkbox" checked>Mushrooms</li>
+                <li><input type="checkbox" checked>Basil</li>
+              </ul>
+              <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
+              <a class="btnStyle listOver">Done</a>
+              <h4 class="totalDialog" id="totalDialog3">Total: <span>15</span>$</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="finishOrderDialog" title="Confirm Order">
+        <div id="finalOrderList">
+          <h3>Your Orders:</h3>
+          <ol></ol>
+        </div>
+        <div id="buyerInfo">
+          <input type="text" id="buyerName" placeholder="Enter Name">
+          <input type="text" id="buyerNumber" placeholder="Enter Phone Number">
+          <input type="text" id="buyerAddress" placeholder="Enter Address">
+          <input type="text" id="buyerName" placeholder="Enter Name">
+          <a class="btnStyle order">Order!</a>
+        </div>
+      </div>
+
+      <div id="thanksMessage">
+        <h1>Thank you for the order</h1>
+        <h3>We will have it delivered soon</h3>
+      </div>
+      </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
