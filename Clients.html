@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="imgs/pizzadianey.jpg">
+    <link rel="stylesheet" href="css/totals.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/_icons.scss">
+    <link rel="stylesheet" href="css/_animated.scss">
+          <script type="text/javascript" src="js/bootstrap.js" async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="js/totals.js" async></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.js" async></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="myDIV" class="header" style="display:none;">
+        <h2>My Wish List</h2>
+        <input type="text" id="myInput" placeholder="Kindly add type the items or select the items you want...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+
+      <ul id="myUL">
+
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <h6>Select Topping and proceed to choose the size of pizza</h6>
+    <select class="selectpicker" data-style="btn-primary" multiple data-max-options="8">
+        <option value="100">Thin Crust Kshs. 100</option>
+        <option value="100">Thick Crust Kshs.100</option>
+        <option value="100">Deep Crust Kshs. 100</option>
+        <option value="100">Cheese Filled Crust Kshs. 100</option>
+        <option value="100">Stuffed Crust Kshs. 100</option>
+        <option value="100">I have no choice Kshs. 120</option>
+      </select>
+
+        </div>
+        <div class="col-6">
+
+            <h6>Select Crust and proceed to select the pizza size of your choicest size</h6>
+          <select class="selectpicker" data-style="btn-primary" multiple data-max-options="8">
+              <option value="100">Pepperoni Kshs.100</option>
+              <option value="100">Mushrooms Kshs.100</option>
+              <option value="100">Onion Kshs.100</option>
+              <option value="100">Sausages Kshs.100</option>
+              <option value="100">Bacon Kshs.100</option>
+              <option value="100">Extra cheese Kshs.100</option>
+              <option value="100">Black olives Kshs.100</option>
+              <option value="100">Green peppers Kshs.100</option>
+            </select>
+        </div>
+      </div>
+      <br><br><br>
+      <label for="transport">Delivery Option:</label>
+      <select class="selectpicker" data-style="btn-primary" multiple data-max-options="1" style="dadding-top:5%;">
+          <option>Ondoor Delivery</option>
+          <option>Pick Up</option>
+        </select>
+    </div>
+    <div class="card-footer">
+      <div class="row">
+        <div class="col-6">
+          <button type="button" onclick="goBack()" name="button">Check out</button>
+        </div>
+      </div>
+
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </body>
+</html>
