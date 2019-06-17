@@ -13,6 +13,7 @@
     <script type="text/javascript" src="js/file.js">
 
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Swanky+and+Moo+Moo|Tangerine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/_animated.scss">
 
       <script type="text/javascript" src="js/mdb.js" async></script>
@@ -39,7 +40,7 @@
 
       <!-- Cart -->
       <nav class="cart">
-        <h3>List of orders: <span>0$</span></h3>
+        <h3>List of orders: <span>0Ksks</span></h3>
         <ol id="listOfOrders">
         </ol>
         <a class="btnStyle btnStyle3 finishOrder">Finish Order</a>
@@ -52,9 +53,9 @@
             <p class="name">Large</p>
             <img src="imgs/New-York-Style-Pizza.jpg">
             <a class="btnStyle3 btnStyle addToCart" id="addToCartLarge">Add to Cart</a>
-            <p class="price"><span>30</span>$</p>
+            <p class="price"><span>300</span>Kshs</p>
             <div id="checkOrderLarge" title="Large">
-              <h3 class="listHeading">List of Ingredients:</h3>
+              <h3 class="listHeading">List of Crust & Toppings:</h3>
               <ul class="listOfIngredients" id="recipe1">
                 <li><input type="checkbox" checked>Sesame Bun</li>
                 <li><input type="checkbox" checked>Ground Beef Patty</li>
@@ -64,7 +65,7 @@
               </ul>
               <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
               <a class="btnStyle listOver">Done</a>
-              <h4 class="totalDialog" id="totalDialog1">Total: <span>30</span>Kshs</h4>
+              <h4 class="totalDialog" id="totalDialog1">Total: <span>300</span>Kshs</h4>
             </div>
           </div>
 
@@ -73,9 +74,9 @@
             <p class="name">Medium</p>
             <img src="imgs/default-pizza-crust-_Fotor.jpg">
             <a class="btnStyle3 btnStyle addToCart" id="addToCartMedium">Add to Cart</a>
-            <p class="price"><span>30</span>$</p>
+            <p class="price"><span>30</span>Kshs</p>
             <div id="checkOrderMedium" title="Medium">
-              <h3 class="listHeading">List of Ingredients:</h3>
+              <h3 class="listHeading">List of Crust & Toppings:</h3>
               <ul class="listOfIngredients" id="recipe2">
                 <li><input type="checkbox" checked>Macaroni</li>
                 <li><input type="checkbox" checked>Paprica</li>
@@ -94,9 +95,9 @@
             <p class="name">Small</p>
             <img src="imgs/PIZZ.jpg">
             <a class="btnStyle3 btnStyle addToCart" id="addToCartPizza">Add to Cart</a>
-            <p class="price"><span>18</span>$</p>
+            <p class="price"><span>180</span>Kshs</p>
             <div id="checkOrderPizza" title="Pizza">
-              <h3 class="listHeading">List of Ingredients:</h3>
+              <h3 class="listHeading">List of Crust & Toppings:</h3>
               <ul class="listOfIngredients" id="recipe3">
                 <li><input type="checkbox" checked>Tomato Sauce</li>
                 <li><input type="checkbox" checked>Cheese</li>
@@ -107,7 +108,7 @@
               </ul>
               <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
               <a class="btnStyle listOver">Done</a>
-              <h4 class="totalDialog" id="totalDialog3">Total: <span>30</span>Kshs</h4>
+              <h4 class="totalDialog" id="totalDialog3">Total: <span>30</span>Ksh</h4>
             </div>
           </div>
 
@@ -132,7 +133,36 @@
         <h1>Thank you for being our customer</h1>
         <h3>We will deliver it very soon!</h3>
       </div>
+      <br><br><br>
+      <div class="">
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(1)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="About.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="Clients.html">Clients</a>
+        <a href="#Contact">Contact</a>
       </div>
+      </div>
+<div class="">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<div id="Contact">
+   <h4 style="font-family: 'Tangerine', cursive;">Contact Us</h4>
+   <p>Tell:</p> <a href="+254708275041">+254708275041</a><br>
+   <p>Email Us:</p> <a href="mailto:joflixooko@outlook.com?subject=feedback">email me</a>
+</div>
+      </div>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
 
     <script type="text/javascript" src="js/script.js"></script>
   </body>
