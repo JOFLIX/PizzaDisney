@@ -60,7 +60,7 @@ input{
 }
 
 .btnStyle:hover{
-	background-color: #874C62;
+	background-color: #wheat;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
 	transform: scale(1.05, 1.05);
 }
@@ -70,7 +70,7 @@ input{
 }
 
 .btnStyle2:hover{
-	background-color: #C98474;
+	background-color: #lightblue;
 }
 
 .btnStyle3{
@@ -78,7 +78,7 @@ input{
 }
 
 .btnStyle3:hover{
-	background-color: #F2D388;
+	background-color: #lightblue;
 }
 
 .toggleCart{
@@ -186,7 +186,7 @@ input{
 }
 
 .compound:hover > .addToCart{
-	opacity: 1;
+	opacity: 2;
 }
 
 .addToCart {
@@ -354,9 +354,9 @@ hr {
 }
 
 .ui-button:hover{
-  background-color: #C98474;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
-	transform: scale(1.05, 1.05);
+  background-color: #lightblue;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .17), 0px 6px 10px rgba(0, 0, 0, .23);
+	transform: scale(1.05, 1.06);
 }
 
 /* styling the sidenav push */
@@ -389,7 +389,7 @@ hr {
 
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #lightblue;
 }
 
 .sidenav .closebtn {
