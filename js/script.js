@@ -47,7 +47,7 @@ $(document).ready(function() {
 	// increase/decrease the price of order if an item is added/removed
 	function checkboxChange(x) {
 		var priceDialog = 0;
-		$("#recipe"+x).children("li").children("input").each(function () {
+		$("#compound"+x).children("li").children("input").each(function () {
 			if($(this).is(":checked")){
 				priceDialog+=50;
 			}
@@ -65,12 +65,12 @@ $(document).ready(function() {
 		});
 	}
 
-	$('#recipe1').children('li').click(checkboxChange(1));
-	$('#recipe2').children('li').click(checkboxChange(2));
-	$('#recipe3').children('li').click(checkboxChange(3));
-	$('#recipe3').children('li').click(checkboxChange(4));
-	$('#recipe3').children('li').click(checkboxChange(5));
-	$('#recipe3').children('li').click(checkboxChange(6));
+	$('#compound1').children('li').click(checkboxChange(1));
+	$('#compound2').children('li').click(checkboxChange(2));
+	$('#compound3').children('li').click(checkboxChange(3));
+	$('#compound3').children('li').click(checkboxChange(4));
+	$('#compound3').children('li').click(checkboxChange(5));
+	$('#compound3').children('li').click(checkboxChange(6));
 
 	$(".addIngredient").on("click", function () {
 		// Creates input field and two buttons for adding an ingrediant that's not on the list
@@ -94,12 +94,12 @@ $(document).ready(function() {
         }
 
 
-				$('#recipe1').children('li').click(checkboxChange(1));
-				$('#recipe2').children('li').click(checkboxChange(2));
-				$('#recipe3').children('li').click(checkboxChange(3));
-				$('#recipe3').children('li').click(checkboxChange(4));
-				$('#recipe3').children('li').click(checkboxChange(5));
-				$('#recipe3').children('li').click(checkboxChange(6));
+				$('#compound1').children('li').click(checkboxChange(1));
+				$('#compound2').children('li').click(checkboxChange(2));
+				$('#compound3').children('li').click(checkboxChange(3));
+				$('#compound3').children('li').click(checkboxChange(4));
+				$('#compound3').children('li').click(checkboxChange(5));
+				$('#compound3').children('li').click(checkboxChange(6));
 
 				$(this).parent().remove();
 			}else{
